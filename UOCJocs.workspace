@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="UOCJocs" Database="" Version="10000">
+  <Project Name="UOCJocs" Path="UOCJocs.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Test">
+      <Environment/>
+      <Project Name="UOCJocs" ConfigName="Test"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Menu">
+      <Environment/>
+      <Project Name="UOCJocs" ConfigName="Test"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

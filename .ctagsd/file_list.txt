@@ -1,0 +1,14 @@
+/home/uoc/Downloads/UOCJocs_E/src/api.c
+/home/uoc/Downloads/UOCJocs_E/include/test.h
+/home/uoc/Downloads/UOCJocs_E/include/menu.h
+/home/uoc/Downloads/UOCJocs_E/include/purchase.h
+/home/uoc/Downloads/UOCJocs_E/src/store.c
+/home/uoc/Downloads/UOCJocs_E/include/data.h
+/home/uoc/Downloads/UOCJocs_E/include/bgame.h
+/home/uoc/Downloads/UOCJocs_E/include/api.h
+/home/uoc/Downloads/UOCJocs_E/src/test.c
+/home/uoc/Downloads/UOCJocs_E/src/purchase.c
+/home/uoc/Downloads/UOCJocs_E/src/main.c
+/home/uoc/Downloads/UOCJocs_E/include/store.h
+/home/uoc/Downloads/UOCJocs_E/src/menu.c
+/home/uoc/Downloads/UOCJocs_E/src/bgame.c
