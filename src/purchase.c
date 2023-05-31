@@ -225,7 +225,80 @@ void lessPopularCategory(tPurchaseTable* tabPurchases, tStoresTable* tabStores, 
     /*****************************************/
     /* Exercise 9b */
     /*****************************************/
+    // Initialize counters for each category
+    int eurogameCount = 0;
+    int ameritrashCount = 0;
+    int cardsCount = 0;
+    int diceCount = 0;
+    int partyCount = 0;
+    int triviaCount = 0;
 
+    // Iterate through all purchases made by the given store
+    for(int i = 0; i < tabPurchases->nPurchases; i++) {
+        if(tabPurchases->table[i].storeId == id) {
+            // This purchase was made by the given store, count the units sold for each category
+            for(int j = 0; j < tabPurchases->table[i].nOrders; j++) {
+                switch(tabPurchases->table[i].orders[j].category) {
+                case EUROGAME:
+                    eurogameCount += tabPurchases->table[i].orders[j].nPurchased;
+                    break;
+                case AMERITRASH:
+                    ameritrashCount += tabPurchases->table[i].orders[j].nPurchased;
+                    break;
+                case CARDS:
+                    cardsCount += tabPurchases->table[i].orders[j].nPurchased;
+                    break;
+                case DICE:
+                    diceCount += tabPurchases->table[i].orders[j].nPurchased;
+                    break;
+                case PARTY:
+                    partyCount += tabPurchases->table[i].orders[j].nPurchased;
+                    break;
+                case TRIVIA:
+                    triviaCount += tabPurchases->table[i].orders[j].nPurchased;
+                    break;
+                }
+            }
+        }
+    }
+
+    // Find the category with the least number of sales
+    tGameCategory leastPopularCategory = NO_CATEGORY;
+    int minCount = INT_MAX;
+    if(eurogameCount < minCount) {
+        minCount = eurogameCount;
+        leastPopularCategory = EUROGAME;
+    }
+    if(ameritrashCount < minCount) {
+        minCount = ameritrashCount;
+        leastPopularCategory = AMERITRASH;
+    }
+    if(cardsCount < minCount) {
+        minCount = cardsCount;
+        leastPopularCategory = CARDS;
+    }
+    if(diceCount < minCount) {
+        minCount = diceCount;
+        leastPopularCategory = DICE;
+    }
+    if(partyCount < minCount) {
+        minCount = partyCount;
+        leastPopularCategory = PARTY;
+    }
+    if(triviaCount < minCount) {
+        minCount = triviaCount;
+        leastPopularCategory = TRIVIA;
+    }
+
+    // Return ERROR if there are no purchases or stores, OK otherwise
+    if(tabPurchases->nPurchases == 0 || tabStores->nStores == 0) {
+        *retVal = ERROR;
+    } else {
+        *retVal = OK;
+    }
+
+    // Set the output parameter to the least popular category found
+    *cat = leastPopularCategory;
     /*****************************************/
 }
 

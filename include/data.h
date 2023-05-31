@@ -28,6 +28,7 @@
 #define ERR_STORE_INVALID -1
 #define MIN_YEAR 1900
 #define MAX_YEAR 2023
+#define INT_MAX 1E+10
 
 /* Definition of the error type. */
 typedef enum {
@@ -67,7 +68,7 @@ typedef struct {
     /*****************************************/
     /* Exercise 1 */
     /*****************************************/
-    tBGamieId bgameId;
+    tBGameId bgameId;
     char bgName[MAX_NAME];
     int age;
     int duration;

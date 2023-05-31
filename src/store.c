@@ -388,6 +388,43 @@ void mostProfitableStore(tStoresTable* tabStores, tPurchaseTable* tabPurchases, 
     /*****************************************/
     /* Exercise 9a */
     /*****************************************/
+    float maxProfit = -1; // start with an invalid value
+    int nStores = tabStores->nStores;
+    *retVal = OK;
 
+    if(nStores == 0) { // if there are no stores, return ERR_NO_STORE
+        *retVal = ERR_NO_STORE;
+        return;
+    }
+
+    for(int i = 0; i < nStores; i++) {
+        float totalProfit = 0;
+        tStore* store = &(tabStores->table[i]);
+        int nPurchases = tabPurchases->nPurchases;
+
+        for(int j = 0; j < nPurchases; j++) {
+            tPurchase* purchase = &(tabPurchases->table[j]);
+
+            if(purchase->storeId != store->storeId) { // skip purchases from other stores
+                continue;
+            }
+
+            if(purchase->date.year != year) { // skip purchases made in other years
+                continue;
+            }
+
+            int nOrders = purchase->nOrders;
+
+            for(int k = 0; k < nOrders; k++) {
+                tOrder* order = &(purchase->orders[k]);
+                totalProfit += order->price * order->nPurchased;
+            }
+        }
+
+        if(totalProfit > maxProfit) {
+            maxProfit = totalProfit;
+            *profStore = store->storeId;
+        }
+    }
     /*****************************************/
 }
