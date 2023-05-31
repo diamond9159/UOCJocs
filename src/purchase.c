@@ -237,9 +237,16 @@ void lessPopularCategory(tPurchaseTable* tabPurchases, tStoresTable* tabStores, 
     for(int i = 0; i < tabPurchases->nPurchases; i++) {
         if(tabPurchases->table[i].storeId == id) {
             // This purchase was made by the given store, count the units sold for each category
-            for(int j = 0; j < tabPurchases->table[i].nOrders; j++) {
-                /*
-                switch(tabPurchases->table[i].orders[j].category) {
+            for(int j = 0; j < tabPurchases->table[i].nOrders; j++) { 
+                
+                tBGameTable* tabBGames = &(tabStores->table[i].inventory.games);
+                char* bgameName = tabPurchases->table[i].orders[j].bgame;
+                
+                int pos = bgameTableFindName(tabBGames, bgameName);
+                
+                if (pos == NO_BGAME) continue;               
+                
+                switch(tabBGames->table[pos].category) {
                 case EUROGAME:
                     eurogameCount += tabPurchases->table[i].orders[j].nPurchased;
                     break;
@@ -258,7 +265,7 @@ void lessPopularCategory(tPurchaseTable* tabPurchases, tStoresTable* tabStores, 
                 case TRIVIA:
                     triviaCount += tabPurchases->table[i].orders[j].nPurchased;
                     break;
-                }*/
+                }
             }
         }
     }
