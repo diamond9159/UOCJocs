@@ -152,18 +152,38 @@ void checkStoreCapacity(tStore* store, bool* dtApplied)
     /*****************************************/
 }
 
-void printPurchaseTickets(tPurchaseTable* tabPurchases)
+void printPurchaseTickets(tStoresTable* tabStores, tPurchaseTable* tabPurchases)
 {
     int i;
     for(i = 0; i < tabPurchases->nPurchases; i++)
-        printTickets(&(tabPurchases->table[i]));
+        printTickets(tabStores, &(tabPurchases->table[i]));
 }
 
-void printTickets(tPurchase* purchase)
+void printTickets(tStoresTable* tabStores, tPurchase* purchase)
 {
     /*****************************************/
     /* Exercise 7 */
     /*****************************************/
+
+    int pos = storeTableFind(tabStores, purchase->storeId);
+    char storeName[MAX_NAME] = tabStores.table[pos].name;
+
+    printf("--------------------------------------------------\n");
+    printf("%s\n", storeName);
+    printf("--------------------------------------------------\n");
+    printf("%-20s %10s\n", "Board Game", "Units");
+    printf("--------------------------------------------------\n");
+
+    float total = 0.0;
+    for(int i = 0; i < purchase->nOrders; i++) {
+        tOrder* order = &(purchase->orders[i]);
+        printf("%-20s %10d\n", order->bgame, order->nPurchased);
+        total += (order->price * order->nPurchased);
+    }
+
+    printf("--------------------------------------------------\n");
+    printf("%31s %10.2f\n", "Total:", total);
+    printf("--------------------------------------------------\n");
 
     /*****************************************/
 }
