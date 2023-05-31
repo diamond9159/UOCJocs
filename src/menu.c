@@ -48,100 +48,100 @@ void readBGame (tBGame *bgame, tError *retVal) {
     /* Exercise 4 */    
     /*****************************************/
 
+    char buffer[MAX_NAME];
+    int number;
+    float discount;
     
-
-
-
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame id (integer between 1 and %d):\n>> ",MAX_BGAMES);
+        scanf("%d",&number);
+        if(number >= 1 && number <= MAX_BGAMES) {
+            bgame->bgameId= (tBGameId)(number);
+            *retVal = OK;
+        }
+    }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame name (max %d char, no spaces):\n>> ", MAX_NAME-1);
+        scanf("%s",buffer);
+        length = strlen(buffer);
+        if (length<MAX_NAME) {
+            strncpy(bgame->name, buffer, MAX_NAME);
+            *retVal = OK;
+        }
+    }
     
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame age (integer Must be greater than zero):\n>> ");
+        scanf("%d",&number);
+        if(number > 0) {
+            bgame->age = number;
+            *retVal = OK;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame duration (integer must be greater than zero):\n>> ");
+        scanf("%d",&number);
+        if(number > 0) {
+            bgame->duration = number;
+            *retVal = OK;
+        }
+    }
     
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame category (EUROGAME=0, AMERITRASH=1, CARDS=2, DICE=3, PARTY=4, TRIVIA=5):\n>> ");
+        scanf("%d",&number);
+        if(number >= 0 && number <=5) {
+            bgame->category = (tGameCategory)(number);
+            *retVal = OK;
+        }
+    }
 
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame launchDate (integer must be between 1900 and 2023, both inclusive):\n>> ");
+        scanf("%d",&number);
+        if(number >= 1900 && number <=2023) {
+            bgame->launchDate = number;
+            *retVal = OK;
+        }
+    }
 
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame price (float must be >=0.0):\n>> ");
+        scanf("%f",&discount);
+        if(discount>=0.0) {
+            bgame->price = discount;
+            *retVal = OK;
+        }
+    }
+    
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame discount (float between 0.0 and 100.0):\n>> ");
+        scanf("%f",&discount);
+        if(discount>=0.0 && discount<=100.0) {
+            bgame->discount = discount;
+            *retVal = OK;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    *retVal = ERROR;
+    while (*retVal == ERROR) {
+        printf("BGame availability (integer must be greater than or equal to zero):\n>> ");
+        scanf("%d",&number);
+        if(number >= 0) {
+            bgame->availability = number;
+            *retVal = OK;
+        }
+    }
 
     /*****************************************/
 }
