@@ -53,7 +53,7 @@ void readBGame(tBGame* bgame, tError* retVal)
     /*****************************************/
 
     char buffer[MAX_NAME];
-    int number;
+    int number, length;
     float discount;
 
     *retVal = ERROR;
@@ -72,7 +72,7 @@ void readBGame(tBGame* bgame, tError* retVal)
         scanf("%s", buffer);
         length = strlen(buffer);
         if(length < MAX_NAME) {
-            strncpy(bgame->name, buffer, MAX_NAME);
+            strncpy(bgame->bgName, buffer, MAX_NAME);
             *retVal = OK;
         }
     }

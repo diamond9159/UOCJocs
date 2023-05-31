@@ -1,57 +1,57 @@
 [{
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\src\\main.c",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang -c E:\\temp\\UOCJocs_E\\UOCJocs\\src\\main.c -o E:\\temp\\UOCJocs_E\\UOCJocs\\src\\main.c.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\src\\main.c",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/gcc.exe -c E:\\temp\\UOCJocs_E\\src\\main.c -o E:\\temp\\UOCJocs_E\\src\\main.c.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\src\\store.c",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang -c E:\\temp\\UOCJocs_E\\UOCJocs\\src\\store.c -o E:\\temp\\UOCJocs_E\\UOCJocs\\src\\store.c.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\src\\purchase.c",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/gcc.exe -c E:\\temp\\UOCJocs_E\\src\\purchase.c -o E:\\temp\\UOCJocs_E\\src\\purchase.c.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\src\\menu.c",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang -c E:\\temp\\UOCJocs_E\\UOCJocs\\src\\menu.c -o E:\\temp\\UOCJocs_E\\UOCJocs\\src\\menu.c.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\src\\test.c",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/gcc.exe -c E:\\temp\\UOCJocs_E\\src\\test.c -o E:\\temp\\UOCJocs_E\\src\\test.c.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\src\\bgame.c",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang -c E:\\temp\\UOCJocs_E\\UOCJocs\\src\\bgame.c -o E:\\temp\\UOCJocs_E\\UOCJocs\\src\\bgame.c.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\src\\store.c",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/gcc.exe -c E:\\temp\\UOCJocs_E\\src\\store.c -o E:\\temp\\UOCJocs_E\\src\\store.c.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\src\\purchase.c",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang -c E:\\temp\\UOCJocs_E\\UOCJocs\\src\\purchase.c -o E:\\temp\\UOCJocs_E\\UOCJocs\\src\\purchase.c.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\include\\purchase.h",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/g++.exe -c E:\\temp\\UOCJocs_E\\include\\purchase.h -o E:\\temp\\UOCJocs_E\\include\\purchase.h.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\include\\api.h",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang++ -c E:\\temp\\UOCJocs_E\\UOCJocs\\include\\api.h -o E:\\temp\\UOCJocs_E\\UOCJocs\\include\\api.h.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\include\\api.h",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/g++.exe -c E:\\temp\\UOCJocs_E\\include\\api.h -o E:\\temp\\UOCJocs_E\\include\\api.h.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\src\\test.c",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang -c E:\\temp\\UOCJocs_E\\UOCJocs\\src\\test.c -o E:\\temp\\UOCJocs_E\\UOCJocs\\src\\test.c.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\src\\bgame.c",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/gcc.exe -c E:\\temp\\UOCJocs_E\\src\\bgame.c -o E:\\temp\\UOCJocs_E\\src\\bgame.c.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\include\\bgame.h",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang++ -c E:\\temp\\UOCJocs_E\\UOCJocs\\include\\bgame.h -o E:\\temp\\UOCJocs_E\\UOCJocs\\include\\bgame.h.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\include\\bgame.h",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/g++.exe -c E:\\temp\\UOCJocs_E\\include\\bgame.h -o E:\\temp\\UOCJocs_E\\include\\bgame.h.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\include\\data.h",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang++ -c E:\\temp\\UOCJocs_E\\UOCJocs\\include\\data.h -o E:\\temp\\UOCJocs_E\\UOCJocs\\include\\data.h.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\src\\api.c",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/gcc.exe -c E:\\temp\\UOCJocs_E\\src\\api.c -o E:\\temp\\UOCJocs_E\\src\\api.c.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\include\\test.h",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang++ -c E:\\temp\\UOCJocs_E\\UOCJocs\\include\\test.h -o E:\\temp\\UOCJocs_E\\UOCJocs\\include\\test.h.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\include\\test.h",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/g++.exe -c E:\\temp\\UOCJocs_E\\include\\test.h -o E:\\temp\\UOCJocs_E\\include\\test.h.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\include\\purchase.h",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang++ -c E:\\temp\\UOCJocs_E\\UOCJocs\\include\\purchase.h -o E:\\temp\\UOCJocs_E\\UOCJocs\\include\\purchase.h.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\src\\menu.c",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/gcc.exe -c E:\\temp\\UOCJocs_E\\src\\menu.c -o E:\\temp\\UOCJocs_E\\src\\menu.c.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\include\\menu.h",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang++ -c E:\\temp\\UOCJocs_E\\UOCJocs\\include\\menu.h -o E:\\temp\\UOCJocs_E\\UOCJocs\\include\\menu.h.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\include\\data.h",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/g++.exe -c E:\\temp\\UOCJocs_E\\include\\data.h -o E:\\temp\\UOCJocs_E\\include\\data.h.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\src\\api.c",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang -c E:\\temp\\UOCJocs_E\\UOCJocs\\src\\api.c -o E:\\temp\\UOCJocs_E\\UOCJocs\\src\\api.c.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\include\\store.h",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/g++.exe -c E:\\temp\\UOCJocs_E\\include\\store.h -o E:\\temp\\UOCJocs_E\\include\\store.h.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }, {
-  "file": "E:\\temp\\UOCJocs_E\\UOCJocs\\include\\store.h",
-  "directory": "E:\\temp\\UOCJocs_E\\UOCJocs",
-  "command": "clang++ -c E:\\temp\\UOCJocs_E\\UOCJocs\\include\\store.h -o E:\\temp\\UOCJocs_E\\UOCJocs\\include\\store.h.o  -I. -I. -I./include  -g  -O0  -Wall"
+  "file": "E:\\temp\\UOCJocs_E\\include\\menu.h",
+  "directory": "E:\\temp\\UOCJocs_E",
+  "command": "C:/msys64/mingw64/bin/g++.exe -c E:\\temp\\UOCJocs_E\\include\\menu.h -o E:\\temp\\UOCJocs_E\\include\\menu.h.o -target x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\x86_64-w64-mingw32 -IC:\\msys64\\mingw64\\include\\c++\\12.2.0\\backward -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include -IC:\\msys64\\mingw64\\include -IC:\\msys64\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\12.2.0\\include-fixed -I. -I. -I./include  -g  -O0  -Wall"
  }]

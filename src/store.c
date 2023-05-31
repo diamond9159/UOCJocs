@@ -306,7 +306,7 @@ void checkAvailability(tStore* store, char* name, int amount, tError* retVal, in
     } else {
         tBGame* sellBGame = &(store->inventory.games.table[pos]);
         if(sellBGame->availability > 0) {
-            *toSell = min(sellBGame->availability, amount);
+            *toSell = sellBGame->availability > amount? amount : sellBGame->availability;
             *retVal = OK;
         } else {
             *toSell = 0;
@@ -330,8 +330,8 @@ void calculatePrice(tStore* store, char* name, int amount, tError* retVal, float
     } else {
         tBGame* sellBGame = &(store->inventory.games.table[pos]);
 
-        float discount = sellBGame.discount + store->specialDiscount;
-        float pricePerUnit = sellBGame.price;
+        float discount = sellBGame->discount + store->specialDiscount;
+        float pricePerUnit = sellBGame->price;
 
         float totalPrice = pricePerUnit * (float)amount * (1.0 - (discount / 100.0));
         *pvp = totalPrice;

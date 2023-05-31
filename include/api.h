@@ -31,7 +31,7 @@ void addBGame(tStore *store, tBGame newBGame, tError *retVal);
 void checkStoreCapacity(tStore *store, bool *dtApplied);
 
 /* Print the purchases table tickets */
-void printPurchaseTickets(tPurchaseTable *tabPurchases);
+void printPurchaseTickets(tStoresTable* tabStores, tPurchaseTable *tabPurchases);
 
 /* Print a purchase ticket */
-void printTickets (tPurchase *purchase);
+void printTickets (tStoresTable* tabStores, tPurchase *purchase);

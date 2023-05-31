@@ -136,7 +136,7 @@ void checkStoreCapacity(tStore* store, bool* dtApplied)
     /*****************************************/
     /* Exercise 5b */
     /*****************************************/
-#define FULL_RATE 0.8;
+#define FULL_RATE 0.8
 
     int nStoredBGamesCopy = store->inventory.nStoredBGames;
     float full = 1.0 - (float)((float)nStoredBGamesCopy / (float)store->maxStorage);
@@ -165,8 +165,9 @@ void printTickets(tStoresTable* tabStores, tPurchase* purchase)
     /* Exercise 7 */
     /*****************************************/
 
-    int pos = storeTableFind(tabStores, purchase->storeId);
-    char storeName[MAX_NAME] = tabStores.table[pos].name;
+    int pos = storeTableFind(*tabStores, purchase->storeId);
+    char storeName[MAX_NAME];
+    strcpy(storeName, tabStores->table[pos].name);
 
     printf("--------------------------------------------------\n");
     printf("%s\n", storeName);
