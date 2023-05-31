@@ -104,6 +104,8 @@ void addBGame(tStore* store, tBGame newBGame, tError* retVal)
     int nBGamesCopy = store->inventory.nBGames;
     int nStoredBGamesCopy = store->inventory.nStoredBGames;
 
+    *retVal = ERROR;
+
     if(nBGamesCopy == MAX_BGAMES) {
         *retVal = ERR_MEMORY;
     } else {
@@ -122,7 +124,8 @@ void addBGame(tStore* store, tBGame newBGame, tError* retVal)
             store->inventory.nBGames = store->inventory.games.nBGames;
         }
         store->inventory.nStoredBGames += newBGame.availability;
-        *retVal = OK;
+        if(*retVal != ERR_FULL_WAREHOUSE)
+            *retVal = OK;
     }
 
     /*****************************************/
