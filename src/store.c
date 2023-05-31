@@ -363,6 +363,22 @@ void storesTableFilterByWarehouse(tStoresTable tabStores, float occupancy, tStor
     /* Exercise 8c */
     /*****************************************/
 
+    // Initialize tabStores2
+    tabStores2->nStores = 0;
+
+    // Iterate over each store in tabStores
+    for(int i = 0; i < tabStores.nStores; i++) {
+        // Calculate the warehouse occupancy percentage for the current store
+        float currentOccupancy =
+            ((float)tabStores.table[i].inventory.nStoredBGames / (float)tabStores.table[i].maxStorage) * 100;
+
+        // If the occupancy percentage is greater than or equal to the given occupancy, add the store to tabStores2
+        if(currentOccupancy >= occupancy) {
+            tabStores2->table[tabStores2->nStores] = tabStores.table[i];
+            tabStores2->nStores++;
+        }
+    }
+
     /*****************************************/
 }
 
