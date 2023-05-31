@@ -136,6 +136,18 @@ void checkStoreCapacity(tStore* store, bool* dtApplied)
     /*****************************************/
     /* Exercise 5b */
     /*****************************************/
+#define FULL_RATE 0.8;
+
+    int nStoredBGamesCopy = store->inventory.nStoredBGames;
+    float full = 1.0 - (float)((float)nStoredBGamesCopy / (float)store->maxStorage);
+
+    if(full >= FULL_RATE) {
+        store->specialDiscount = 20.0;
+        *dtApplied = true;
+    } else {
+        store->specialDiscount = 0.0;
+        *dtApplied = false;
+    }
 
     /*****************************************/
 }
