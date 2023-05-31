@@ -300,7 +300,7 @@ void checkAvailability(tStore* store, char* name, int amount, tError* retVal, in
 
     int pos;
     pos = bgameTableFindName(&(store->inventory.games), name);
-    if(pos != NO_BGAME) {
+    if(pos == NO_BGAME) {
         *toSell = 0;
         *retVal = ERR_NO_BGAME;
     } else {
